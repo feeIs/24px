@@ -11,7 +11,7 @@ const globSync = require("glob").sync;
 module.exports = (env, options) => ({
   entry: ["./src/index.js"],
   devServer: {
-    contentBase: "./dist",
+    contentBase: "./docs",
   },
   devtool: "source-map",
   module: {
@@ -76,8 +76,8 @@ module.exports = (env, options) => ({
       jQuery: "jquery",
       "window.jQuery": "jquery",
       Popper: ["popper.js", "default"],
-      Util: "exports-loader?Util!bootstrap/js/dist/util",
-      Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
+      Util: "exports-loader?Util!bootstrap/js/docs/util",
+      Dropdown: "exports-loader?Dropdown!bootstrap/js/docs/dropdown",
     }),
   ],
   optimization: {
@@ -92,7 +92,7 @@ module.exports = (env, options) => ({
   },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     publicPath: "",
   },
 });
