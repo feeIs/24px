@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/bootstrap";
+@import "custom";
 
 @import "fonts";
 @import "variables";
@@ -6,4 +6,7 @@
 body {
   background: #fff;
   font-family: 'Cutive Mono', monospace;
+}
+.btn {
+  border-radius: 0rem;
 }
