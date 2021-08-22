@@ -4,7 +4,7 @@
   "description": "Webpack-Sass-Bootstrap Boilerplate",
   "main": "index.js",
   "scripts": {
-    "build": "webpack  --mode=production",
+    "build": "webpack  --mode=production --stats-children",
     "watch": "webpack --progress --watch  --mode=development",
     "start": "webpack serve --open  --mode=development"
   },
